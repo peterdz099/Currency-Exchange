@@ -12,9 +12,9 @@ function getGBP(){
 
 function setRate(){
     getGBP().then(function(){
-        document.getElementById('rate').innerText = j.rates[0].mid;
+        document.getElementById('rate').innerText = j.rates[0].mid.toFixed(2);
         document.getElementById('GBP').value = 1.00;
-        document.getElementById('PLN').value = 1.00 * j.rates[0].mid;
+        document.getElementById('PLN').value = 1.00 * j.rates[0].mid.toFixed(2);
     });
 }
 
