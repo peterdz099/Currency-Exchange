@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+  <title>Converter GBP</title>
+</head>
+<body onload = "setRate()">
+  <div class="center">
+
+
+    <p class="text">You Send</p>
+
+    <div class="custom">
+      
+      <img src="https://media.remitly.io/GBR_32x21@2x-561fb5806097ab9a9a06538f3f4340f9.png" class="images">
+      <input class="inputs" id="GBP" onkeyup="convertCurrencies('GBP',this.value)" maxlength="15">
+      <p class="currencies" ><b>GBP</b></p> 
+
+    </div>
+
+    <p class="text">They Recive</p>
+
+    <div class="custom">
+
+      <img src="https://media.remitly.io/POL_32x21@2x-805d07570a2a7ccb7e7049104545c158.png" class="images">
+      <input class="inputs" id="PLN" onkeyup="convertCurrencies('PLN',this.value)" maxlength="15">
+      <p class="currencies"><b>PLN</b></p> 
+
+    </div>
+
+    <div class = "conversion_rate">
+      <p >1 GBP =&nbsp</p>
+      <p><b id="rate"></b></p>
+      <p ><b>&nbspPLN</b></p>
+    </div>
+    
+    <p class="fee"><b>No transfer fee</b></p>
+
+  </div>
+</body>
+</html>
